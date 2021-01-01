@@ -1,0 +1,163 @@
+:root{
+  --strong-cyan: hsl(171,66%, 44%);
+  --light-blue:hsl(233, 100%, 69%);
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+}
+html{
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+/* -------------------- COMPONENTES -------------------- */
+.btn{
+  display: inline-block;
+  width: 80%;
+  padding: 1rem 0;
+  border-radius: 2rem;
+  box-shadow: 17px 6px 17px -8px rgba(0,0,0,0.15);
+}
+/* -------------------- ESTILOS PROPIOS -------------------- */
+.header{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+}
+.header > img:first-child{
+  position: absolute;
+  top:0;
+  right: 0;
+  z-index: -999;
+  width: 100%;
+}
+.header > img:last-child{
+  width: 30%;
+}
+.body-footer-botones,
+.botones{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.btnIOS{
+  background-color: var(--strong-cyan);
+}
+.btnMAC{
+  background-color: var(--light-blue);
+}
+.brands > .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.brands > .container > img{
+  margin: 2rem 0;
+}
+.footer{
+  background-color: rgb(247, 247, 247);
+}
+.footer > .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer > .container > img{
+  width: 50px;
+}
+.footer-nav{
+  display: flex;
+  flex-direction: column;
+}
+.footer-nav a{
+  padding: .75rem;
+  color: gray;
+}
+.sociales{
+  display: flex;
+  justify-content: space-between;
+}
+footer{
+  background-color: var(--dark-grayish-blue);
+}
+.access-clipboard-body > img{
+  width: 100%;
+}
+footer a{
+  color: white;
+}
+@media screen and (min-width: 64rem){
+  .header{
+    height: 15rem;
+  }
+  .header > img:last-child{
+    max-width: 100px;
+  }
+  .hero-section{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .body-footer-botones,
+  .botones{
+    flex-direction: row;
+  }
+  .btn{
+    width: 30%;
+    margin-left: 1rem;
+  }
+  .keep-track > .container{
+    max-width: 60%;
+  }
+  .keep-track-body{
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+  }
+  .keep-track-body > img{
+    position: absolute;
+    top: 0;
+    left: -25rem;
+  }
+  .keep-track-item{
+    width: 45%;
+  }
+  .access-clipboad > .container{
+    width: 60%;
+  }
+  .access-clipboard-options{
+    display: flex;
+  }
+  .access-clipboard-options aside{
+    flex-basis: 33%;
+  }
+  .brands > .container{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .body-footer > .container{
+    width: 60%;
+  }
+  .footer > .container{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer-nav{
+    flex-direction: row;
+    flex-basis: 50%;
+    flex-wrap: wrap;
+  }
+  .footer-nav a{
+    flex-basis: 25%;
+    padding-left: 0;
+  }
+  .sociales{
+    width: 10%;
+  }
+}
+@media screen and (min-width: 100rem){
+  .keep-track-body > img{
+    left: -15rem;
+  }
+}
